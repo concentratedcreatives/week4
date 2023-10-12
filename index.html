@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="assets/style.css"> 
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Code Quiz</h1>
+        <div id="timer">Time: 60</div>
+        <div id="question-container">
+            <!-- The questions will be displayed here -->
+        </div>
+        <div id="message-container"></div>
+        <div id="input-container" style="display: none;">
+            <!-- Enter initials and save score -->
+            <label for="initials">Enter your initials:</label>
+            <input type="text" id="initials">
+        </div>
+    </div>
+    
+    <div id="highscores-container" style="display: none;">
+        <h1>Highscores</h1>
+        <ol id="highscores-list">
+            <!-- Highscores -->
+        </ol>
+            <!--Clear Highscores Button-->
+        <button id="clear-button" class = "button">Clear Highscores</button>
+    </div>
+
+    <button id="start-button" class = "button center" >Start Quiz</button>
+    <!-- Save Score Button -->
+    <button id="save-score-button" class = "button" style="display: none;">Save Score</button>
+
+    <script src="assets/script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
